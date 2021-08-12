@@ -394,7 +394,7 @@ int main(void)
  80004e0:	2108      	movs	r1, #8
  80004e2:	4804      	ldr	r0, [pc, #16]	; (80004f4 <main+0x28>)
  80004e4:	f000 fd08 	bl	8000ef8 <HAL_GPIO_TogglePin>
-	  HAL_Delay(500);
+	   HAL_Delay(500);
  80004e8:	f44f 70fa 	mov.w	r0, #500	; 0x1f4
  80004ec:	f000 fa7a 	bl	80009e4 <HAL_Delay>
 	  HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_3);
