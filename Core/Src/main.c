@@ -62,6 +62,16 @@ static void MX_USART2_UART_Init(void);
 /**
   * @brief  The application entry point.
   * @retval int
+  * @startuml
+     hide footbox
+     skinparam BoxPadding 50
+     box "Le diagramme de séquence:"
+     participant Exemple
+     end box
+     [-> Exemple: setA()
+     Activate Exemple
+     Exemple->Exemple: getA()
+@enduml
   */
 int main(void)
 {
